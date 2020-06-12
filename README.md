@@ -8,6 +8,4 @@ Just put your code on `/src`. Then, you can use the following scripts:
 - `build`: Build the application;
 
 When running `build`, a `dist` folder will be generated, with the minified production code.
-> I strongly recommed yarn as the package manager.
-
-I recomend using yarn as package manager.
+> I strongly recommend yarn as the package manager.
