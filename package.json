@@ -1,0 +1,32 @@
+{
+  "name": "js-with-babel",
+  "version": "1.0.0",
+  "description": "Simple babel template",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jrmmendes/js-with-babel",
+  "author": "Romildo Júnior <jrmmendes@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-preset-minify": "^0.5.1",
+    "node-dev": "^4.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.1",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start:dev": "nodemon --exec babel-node src/index.js",
+    "start": "node dist/index.js"
+  },
+  "nodemonConfig": {
+    "ext": "js, yml, yaml, json"
+  }
+}
